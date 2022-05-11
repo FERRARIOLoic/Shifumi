@@ -6,16 +6,11 @@ let selectHuman = document.querySelectorAll('.imgShifumi');
 
 selectHuman.forEach(eachTableElement => {
 
-    console.log(eachTableElement);
-
-
     eachTableElement.onclick = (event) => {
         console.log(event.target.dataset.value);
 
         let choiceHuman = event.target.dataset.value;
         let choiceComputer = "";
-        console.log('Player : ' + playerPoints);
-        console.log('Computer : ' + computerPoints);
 
 
         function computerChoice(max) {
@@ -36,6 +31,8 @@ selectHuman.forEach(eachTableElement => {
         if (choiceHuman == 'Pierre' && choiceComputer == 'Pierre') {
             document.getElementById("resultBattle").style.color = "#000000";
             resultBattle.innerHTML = 'Egalité';
+            computerPoints = computerPoints + 1;
+            playerPoints = playerPoints + 1;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Feuille') {
             document.getElementById("resultBattle").style.color = "#f00020";
             resultBattle.innerHTML = 'Désolé, vous avez perdu...';
@@ -51,6 +48,8 @@ selectHuman.forEach(eachTableElement => {
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Feuille') {
             document.getElementById("resultBattle").style.color = "#000000";
             resultBattle.innerHTML = 'Egalité';
+            computerPoints = computerPoints + 1;
+            playerPoints = playerPoints + 1;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Ciseaux') {
             document.getElementById("resultBattle").style.color = "#f00020";
             resultBattle.innerHTML = 'Désolé, vos avez perdu...';
@@ -66,13 +65,24 @@ selectHuman.forEach(eachTableElement => {
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Ciseaux') {
             document.getElementById("resultBattle").style.color = "#000000";
             resultBattle.innerHTML = 'Egalité';
+            computerPoints = computerPoints + 1;
+            playerPoints = playerPoints + 1;
         }
 
-        playerPoints.innerHTML = playerPoints;
-        computerPoints.innerHTML = computerPoints;
-        imgResult.innerHTML = `<img src="assets/img/${choiceComputer}.png">`;
-        percentageCalc = (playerPoints * 100) / computerPoints;
-        percentage.innerHTML = `Réussite : <br>${percentageCalc}%`;
+        
+        playerPointsResult.innerHTML = playerPoints;
+        computerPointsResult.innerHTML = computerPoints;
+        imgResult.innerHTML = `<img class="imgShifumiResult" src="assets/img/${choiceComputer}.png">`;
+        if(computerPoints==0)
+        {
+            computerPoints = 1;
+            percentageCalc = (playerPoints * 100) / computerPoints;
+            computerPoints = 0;
+        }
+        else{
+            percentageCalc = (playerPoints * 100) / computerPoints;
+        }
+        percentage.innerHTML = `${percentageCalc}%`;
         console.log(percentageCalc);
     }
 });

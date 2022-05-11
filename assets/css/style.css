@@ -6,6 +6,7 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 
@@ -13,8 +14,8 @@ html {
 
     body {
         background-image: url(../img/backgroundShifumi.jpg);
-        background-position: 45% 50%;
-        border-radius: 10px;
+        background-position: 45% 55%;
+        /* border-radius: 10px; */
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -26,6 +27,7 @@ html {
         align-items: center;
         font-size: 40px;
         color: #B12524;
+        padding: 10px;
     }
 
     .bannerPoints {
@@ -36,26 +38,31 @@ html {
         font-size: 20px;
     }
 
+    .resultBanner {
+        height: 10vh;
+    }
     .bannerImgResult {
         height: 20vh;
-        /* background-color: blue; */
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
     .bannerImgChoice {
-        height: 35vh;
-        /* background-color: blue; */
+        height: 25vh;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
+
     .imgShifumi {
         width: 80%;
     }
 
+    .imgShifumiResult {
+        width: 40%;
+    }
 }
 
 
@@ -71,7 +78,7 @@ html {
 
     .bannerTitle {
         height: 20vh;
-        text-align: start;
+        text-align: center;
         justify-content: center;
         align-items: center;
         font-size: 40px;
@@ -86,17 +93,19 @@ html {
         font-size: 20px;
     }
 
+    .resultBanner {
+        height: 10vh;
+    }
+
     .bannerImgResult {
         height: 20vh;
-        /* background-color: blue; */
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
     .bannerImgChoice {
-        height: 40vh;
-        /* background-color: blue; */
+        height: 35vh;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -104,6 +113,10 @@ html {
 
     .imgShifumi {
         width: 80%;
+    }
+
+    .imgShifumiResult {
+        width: 20%;
     }
 
 }

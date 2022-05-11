@@ -41,6 +41,14 @@ html {
     .resultBanner {
         height: 10vh;
     }
+    #resultBattle {
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+    }
+    .resultBattle {
+        text-align: center;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+    }
+
     .bannerImgResult {
         height: 20vh;
         text-align: center;
@@ -60,9 +68,26 @@ html {
         width: 80%;
     }
 
-    .imgShifumiResult {
+
+    .imgShifumiResultPlayer {
         width: 40%;
+        justify-content: center;
+        align-items: end;
+        animation: animImgResult 1s ease 0s 1 normal both;
     }
+
+    .imgShifumiResultComputer {
+        width: 40%;
+        justify-content: center;
+        align-items: end;
+        animation: animImgResult 1s ease 1s 1 normal both;
+    }
+
+    .imgShifumiWinLose {
+        width: 80%;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+    }
+
 }
 
 
@@ -97,6 +122,14 @@ html {
         height: 10vh;
     }
 
+    #resultBattle {
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+    }
+    .resultBattle {
+        text-align: center;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+    }
+
     .bannerImgResult {
         height: 25vh;
         text-align: center;
@@ -115,17 +148,47 @@ html {
         width: 50%;
     }
 
-    #imgResultPlayer{
+    .imgShifumiResultPlayer {
+        width: 30%;
         justify-content: center;
         align-items: end;
-    }
-    .imgShifumiResult {
-        width: 30%;
-    }
-    .imgShifumiWinLose {
-        width: 50%;
+        animation: animImgResult 1s ease 0s 1 normal both;
     }
 
+    .imgShifumiResultComputer {
+        width: 30%;
+        justify-content: center;
+        align-items: end;
+        animation: animImgResult 1s ease 1s 1 normal both;
+    }
+
+    .imgShifumiWinLose {
+        width: 50%;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+    }
+
+}
+
+@keyframes animImgResult {
+    0% {
+        transform: scale(0);
+        transform-origin: 50% 100%;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 50% 100%;
+    }
+}
+
+@keyframes animImgShifumiResult {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 

@@ -29,66 +29,64 @@ selectHuman.forEach(eachTableElement => {
 
         if (choiceHuman == 'Pierre' && choiceComputer == 'Pierre') {
             document.getElementById("resultBattle").style.color = "#000000";
-            resultBattle.innerHTML = 'Egalité';
+            resultBattle.innerHTML = '<p class="resultBattle">Egalité</p>';
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Feuille') {
             document.getElementById("resultBattle").style.color = "#f00020";
-            resultBattle.innerHTML = 'Désolé, vous avez perdu...';
+            resultBattle.innerHTML = '<p class="resultBattle">Désolé, vous avez perdu...</p>';
             computerPoints = computerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.gif">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Ciseaux') {
             document.getElementById("resultBattle").style.color = "#228B22";
-            resultBattle.innerHTML = 'Bravo, vous avez gagné !!!';
+            resultBattle.innerHTML = '<p class="resultBattle">Bravo, vous avez gagné !!!</p>';
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.gif">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Pierre') {
             document.getElementById("resultBattle").style.color = "#228B22";
-            resultBattle.innerHTML = 'Bravo, vous avez gagné !!!';
+            resultBattle.innerHTML = '<p class="resultBattle">Bravo, vous avez gagné !!!</p>';
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.gif">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Feuille') {
             document.getElementById("resultBattle").style.color = "#000000";
-            resultBattle.innerHTML = 'Egalité';
+            resultBattle.innerHTML = '<p class="resultBattle">Egalité</p>';
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Ciseaux') {
             document.getElementById("resultBattle").style.color = "#f00020";
-            resultBattle.innerHTML = 'Désolé, vous avez perdu...';
+            resultBattle.innerHTML = '<p class="resultBattle">Désolé, vous avez perdu...</p>';
             computerPoints = computerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.gif">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Pierre') {
             document.getElementById("resultBattle").style.color = "#f00020";
-            resultBattle.innerHTML = 'Désolé, vous avez perdu...';
+            resultBattle.innerHTML = '<p class="resultBattle">Désolé, vous avez perdu...</p>';
             computerPoints = computerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.gif">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Feuille') {
             document.getElementById("resultBattle").style.color = "#228B22";
-            resultBattle.innerHTML = 'Bravo, vous avez gagné !!!';
+            resultBattle.innerHTML = '<p class="resultBattle">Bravo, vous avez gagné !!!</p>';
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.gif">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Ciseaux') {
             document.getElementById("resultBattle").style.color = "#000000";
-            resultBattle.innerHTML = 'Egalité';
+            resultBattle.innerHTML = '<p class="resultBattle">Egalité</p>';
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
         }
 
-        
+
         playerPointsResult.innerHTML = playerPoints;
         computerPointsResult.innerHTML = computerPoints;
-        imgResultPlayer.innerHTML = `<img class="imgShifumiResult" src="assets/img/${choiceHuman}.png">`;
-        imgResultComputer.innerHTML = `<img class="imgShifumiResult" src="assets/img/${choiceComputer}.png">`;
-        if(computerPoints==0)
-        {
+        imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayer" src="assets/img/${choiceHuman}.png">`;
+        imgResultComputer.innerHTML = `<img class="imgShifumiResultComputer" src="assets/img/${choiceComputer}.png">`;
+        if (computerPoints == 0) {
             computerPoints = 1;
             percentageCalc = Math.round((playerPoints * 100) / computerPoints);
             computerPoints = 0;
-        }
-        else{
+        } else {
             percentageCalc = Math.round((playerPoints * 100) / computerPoints);
         }
         percentage.innerHTML = `${percentageCalc}%`;

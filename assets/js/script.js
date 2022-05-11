@@ -7,7 +7,6 @@ let selectHuman = document.querySelectorAll('.imgShifumi');
 selectHuman.forEach(eachTableElement => {
 
     eachTableElement.onclick = (event) => {
-        console.log(event.target.dataset.value);
 
         let choiceHuman = event.target.dataset.value;
         let choiceComputer = "";

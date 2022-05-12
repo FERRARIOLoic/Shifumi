@@ -14,24 +14,23 @@ html {
 
     body {
         background-image: url(../img/backgroundShifumi.jpg);
-        background-position: 45% 55%;
-        /* border-radius: 10px; */
+        background-position: 50% 50%;
+        border-radius: 10px;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     .bannerTitle {
         height: 20vh;
-        text-align: start;
+        text-align: center;
         justify-content: center;
         align-items: center;
         font-size: 40px;
         color: #B12524;
-        padding: 10px;
     }
 
     .bannerPoints {
-        height: 10vh;
+        height: 5vh;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -43,55 +42,118 @@ html {
     }
 
     #resultBattle {
-        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+        animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
     .resultBattle {
         text-align: center;
-        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+        animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
-    .bannerImgResult {
+    #imgResultPlayer {
+        text-align: right;
+        position: relative;
+        left: 70px;
+    }
+
+    #imgResultComputer {
+        text-align: left;
+        position: relative;
+        right: 70px;
+    }
+
+    #imgResult {
+        /* z-index: 0; */
+        background-color: white;
         height: 20vh;
+        width: 30vh;
+        border: solid 5px grey;
+        border-radius: 100px;
         text-align: center;
         justify-content: center;
         align-items: center;
+        align-self: flex-end;
+        /* animation: appearArena 1s ease 0s 1 normal both; */
     }
 
-    .bannerImgChoice {
+    @keyframes appearArena {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+
+    .bannerImgResult {
         height: 25vh;
         text-align: center;
         justify-content: center;
         align-items: center;
     }
 
+    .bannerImgChoice {
+        height: 35vh;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 
     .imgShifumi {
-        width: 80%;
+        width: 50%;
+    }
+
+    .imgShifumiResultPlayerWin {
+        width: 70%;
+        text-align: right;
+        /* background-color: blue; */
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+
+    }
+
+    .imgShifumiResultPlayerLost {
+        width: 70%;
+        text-align: right;
+        /* background-color: blue; */
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 5s 1 normal forwards;
+        /* animation: rotateExit 1s ease 3s 1 normal both; */
     }
 
 
-    .imgShifumiResultPlayer {
-        width: 40%;
-        justify-content: center;
-        align-items: end;
-        animation: animImgResult 1s ease 1s 1 normal both;
+    .imgShifumiResultComputerWin {
+        width: 70%;
+        text-align: left;
+        /* background-color: blue; */
+        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
     }
 
-    .imgShifumiResultComputer {
-        width: 40%;
-        justify-content: center;
-        align-items: end;
-        animation: animImgResult 1s ease 1s 1 normal both;
+
+    .imgShifumiResultComputerLost {
+        width: 70%;
+        text-align: left;
+        /* background-color: blue; */
+        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;
     }
+
 
     .imgShifumiWinLose {
-        width: 80%;
-        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+        width: 50%;
+        animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
+    .fight {
+        height:60%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        position: relative;
+        top: 45px;
+        animation: fight 1s ease 0s 1 normal forwards;
+    }
 }
-
 
 
 
@@ -229,6 +291,17 @@ html {
         animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
+    .fight {
+        height: 70%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        position: relative;
+        top: 0px;
+        animation: fight 1s ease 0s 1 normal forwards;
+    }
+
 }
 
 
@@ -245,25 +318,18 @@ html {
     align-items: center;
     align-self: flex-end;
 }
-.fight{
-    height:70%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    position: relative;
-    top:30px;
-    animation: fight 1s ease 0s 1 normal forwards;
-}@keyframes fight {
-	0% {
-		opacity: 0;
-		transform: rotate(-540deg) scale(0);
-	}
 
-	100% {
-		opacity: 1;
-		transform: rotate(0) scale(1);
-	}
+
+@keyframes fight {
+    0% {
+        opacity: 0;
+        transform: rotate(-540deg) scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
 }
 
 
@@ -292,26 +358,29 @@ html {
         transform: translateX(0);
     }
 }
+
 @keyframes rotateExitPlayer {
-	0% {
-		opacity: 1;
-		transform: translateX(0) rotate(0deg);
-	}
+    0% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
 
-	100% {
-		opacity: 0;
-		transform: translateX(-250px) rotate(-200deg);
-	}
-}@keyframes rotateExitComputer {
-	0% {
-		opacity: 1;
-		transform: translateX(0) rotate(0deg);
-	}
+    100% {
+        opacity: 0;
+        transform: translateX(-250px) rotate(-200deg);
+    }
+}
 
-	100% {
-		opacity: 0;
-		transform: translateX(250px) rotate(200deg);
-	}
+@keyframes rotateExitComputer {
+    0% {
+        opacity: 1;
+        transform: translateX(0) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(250px) rotate(200deg);
+    }
 }
 
 @keyframes animImgResult {
@@ -335,6 +404,7 @@ html {
         opacity: 1;
     }
 }
+
 @keyframes jelloWin {
     0% {
         transform: scale3d(1, 1, 1);

@@ -124,7 +124,16 @@ selectHuman.forEach(eachTableElement => {
     }
 });
 
+function changeImage(element)
+{ 
+	var v = element.getAttribute("src");
+	v = localFilename(v);   // for a local filename
 
-function changeSRC() {
-    document.getElementById('choiceHuman').src = 'public/assets/img/unknown.png';
+	if(v == "feed-blue.png")
+		v = "feed-orange.png";
+	else
+		v = "feed-blue.png";
+
+	element.setAttribute("src", v);	
+
 }

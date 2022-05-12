@@ -69,7 +69,7 @@ html {
         background-color: white;
         height: 20vh;
         width: 30vh;
-        border: solid 5px grey;
+        border: solid 2px #B12524;
         border-radius: 100px;
         text-align: center;
         justify-content: center;
@@ -113,27 +113,27 @@ html {
     .imgShifumiResultPlayerWin {
         width: 150%;
         text-align: right;
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
 
     }
 
     .imgShifumiResultPlayerLost {
         width: 150%;
         text-align: right;
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 5s 1 normal forwards;
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
     }
 
 
     .imgShifumiResultComputerWin {
         width: 150%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
     .imgShifumiResultComputerLost {
         width: 150%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;
+        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
     }
 
     #playerPointsResult,
@@ -237,7 +237,7 @@ html {
         background-color: white;
         height: 30vh;
         width: 50vh;
-        border: solid 5px grey;
+        border: solid 2px #B12524;
         border-radius: 100px;
         text-align: center;
         justify-content: center;
@@ -281,7 +281,7 @@ html {
     .imgShifumiResultPlayerWin {
         width: 70%;
         text-align: right;
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
 
     }
 
@@ -289,21 +289,21 @@ html {
         width: 70%;
         text-align: right;
         /* background-color: blue; */
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 5s 1 normal forwards;
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
     }
 
 
     .imgShifumiResultComputerWin {
         width: 70%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
 
     .imgShifumiResultComputerLost {
         width: 70%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;
+        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
     }
 
 

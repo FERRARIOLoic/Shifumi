@@ -67,9 +67,9 @@ html {
 
     #imgResult {
         background-color: white;
-        height: 30vh;
+        height: 20vh;
         width: 30vh;
-        border: solid 3px #B12524;
+        border: solid 2px #B12524;
         border-radius: 100px;
         text-align: center;
         justify-content: center;
@@ -190,6 +190,24 @@ html {
         background-size: cover;
     }
 
+    .rules{
+        padding :20px 20px 20px 20px;
+        text-align: center;
+        /* border:2px solid #B12524; */
+        /* background-color: #EBC161; */
+        /* opacity:0.3; */
+    }
+    .rulesTitle {
+        margin: 50px 20px 0px 20px;
+        border:2px solid #B12524;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .rulesTxt {
+        margin: 0px 20px 20px 20px;
+        border:2px solid #B12524;
+        border-radius: 0px 0px 10px 10px ;
+        height:20vw;
+    }
     .bannerTitle {
         height: 20vh;
         text-align: center;

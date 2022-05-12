@@ -126,12 +126,3 @@ selectHuman.forEach(eachTableElement => {
 
 
 // PLAY MUSICvar aAudio = new Audio('a.mp3');
-var bAudio = new Audio('b.mp3');
-
-function myAudioFunction(letter) {
-    if (letter == 'play') {
-        aAudio.play();
-    } else if (letter == 'pause') {
-        bAudio.play();
-    }
-}

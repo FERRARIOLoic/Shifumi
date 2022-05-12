@@ -124,6 +124,7 @@ selectHuman.forEach(eachTableElement => {
     }
 });
 
+
 function changeImage(element)
 { 
 	var v = element.getAttribute("src");

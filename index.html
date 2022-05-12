@@ -12,15 +12,7 @@
 </head>
 
 <body>
-
-<audio src="assets/img/shifumiAudio.mp3" autoplay="1"></audio>
-<!-- <a onclick="myAudioFunction('play');">
-    <img src="assets/img/speakerOn.png">
-</a>
-<a onclick="myAudioFunction('pause');">
-    <img src="B.jpg">
-</a>
-<a href="#" id="audioControl" autoplay="1">play!</a> -->
+    <audio src="assets/img/shifumiAudio.mp3" autoplay="1"></audio>
     <main class="container-fluid text-center align-self-center">
         <div class="row">
             <div class="col-12 col-md-7">
@@ -59,10 +51,27 @@
                             src="assets/img/Ciseaux.png">
                     </div>
                 </div>
-            <!-- COL FOR IMG -->
-            <div class="col-12 copyright">
-                &#169;FERRARIOLoïc-05/22
-            </div>
+                <!-- COL FOR IMG -->
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-5 copyright">
+                            &#169;FERRARIOLoïc-05/22
+                        </div>
+                        <div class="col-2">
+                            <img id="audioControl" src="assets/img/speakerOn.png">
+                        </div>
+                        <div class="col-5 switch-holder">
+                            <div class="switch-label">
+                                <i class="fa fa-bluetooth-b"></i><span>Joke Mode</span>
+                            </div>
+                            <div class="switch-toggle">
+                                <input type="checkbox" id="bluetooth">
+                                <label for="bluetooth"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
             </div>
 
 

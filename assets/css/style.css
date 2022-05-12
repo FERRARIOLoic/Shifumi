@@ -337,6 +337,7 @@ html {
 .copyright {
     font-size: 10px;
     font-style: italic;
+    color:#B02624;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -494,6 +495,7 @@ html {
     display: flex;
     justify-content: end;
     align-items: center;
+    /* color:#fff; */
     /* background-color: blue; */
 }
 
@@ -542,7 +544,7 @@ html {
     left: 50%;
     content: 'On';
     color: #fff;
-    background-color: #00b33c;
+    background-color: #B02624;
     box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
-        3px 3px 5px #00b33c;
+        3px 3px 5px #B02624;
 }

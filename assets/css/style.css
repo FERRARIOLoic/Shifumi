@@ -330,10 +330,9 @@ html {
 .copyright {
     font-size: 10px;
     font-style: italic;
-    text-align: center;
-    justify-content: center;
+    display: flex;
+    justify-content: start;
     align-items: center;
-    align-self: flex-end;
 }
 
 #audioControl {
@@ -491,7 +490,7 @@ html {
     display: flex;
     justify-content: end;
     align-items: center;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .switch-label {

@@ -125,4 +125,6 @@ selectHuman.forEach(eachTableElement => {
 });
 
 
-// PLAY MUSICvar aAudio = new Audio('a.mp3');
+function changeSRC() {
+    document.getElementById('choiceHuman').src = 'public/assets/img/unknown.png';
+}

@@ -103,7 +103,7 @@ html {
     }
 
     .imgShifumi {
-        width:90%;
+        width: 90%;
     }
 
     #choiceHuman {
@@ -170,6 +170,10 @@ html {
         position: relative;
         top: 25px;
         animation: fight 1s ease 0s 1 normal forwards, animBlink 10s ease 1s infinite normal forwards;
+    }
+
+    #audioControl {
+        width: 40%;
     }
 }
 
@@ -319,6 +323,9 @@ html {
         animation: fight 1s ease 0s 1 normal forwards, animBlink 10s ease 1s infinite normal forwards;
     }
 
+    #audioControl {
+        width: 15%;
+    }
 }
 
 
@@ -335,9 +342,6 @@ html {
     align-items: center;
 }
 
-#audioControl {
-    width: 40%;
-}
 
 
 @keyframes waitingPlay {
@@ -495,6 +499,7 @@ html {
 
 .switch-label {
     width: 100px;
+    /* font-size:small; */
 }
 
 .switch-toggle input[type="checkbox"] {

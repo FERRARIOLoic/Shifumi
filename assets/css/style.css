@@ -21,10 +21,10 @@ html {
     }
 
     .bannerTitle {
-        height: 20vh;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        height: 15vh;
+        text-align: left;
+        /* justify-content: center; */
+        /* align-items: center; */
         font-size: 40px;
         color: #B12524;
     }
@@ -42,6 +42,7 @@ html {
     }
 
     #resultBattle {
+        height:5vh;
         animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
@@ -54,14 +55,14 @@ html {
         text-align: right;
         position: relative;
         top: 30px;
-        left: 45px;
+        left: 30px;
     }
 
     #imgResultComputer {
         text-align: left;
         position: relative;
         top: 30px;
-        right: 45px;
+        right: 50px;
     }
 
     #imgResult {
@@ -106,7 +107,7 @@ html {
     }
 
     .imgShifumiResultPlayerWin {
-        width: 100%;
+        width: 150%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
 
@@ -125,6 +126,11 @@ html {
         animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
     }
 
+    .imgShifumiResultComputerLost {
+        width: 150%;
+        text-align: left;
+        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;
+    }
     #playerPointsResult, #percentage, #computerPointsResult {
         overflow:hidden;
         animation: nbPoints 1s ease 4s 1 normal both;
@@ -141,11 +147,6 @@ html {
         }
     }
 
-    .imgShifumiResultComputerLost {
-        width: 100%;
-        text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;
-    }
 
 
     .imgShifumiWinLose {

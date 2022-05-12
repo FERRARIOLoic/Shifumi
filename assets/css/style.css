@@ -67,9 +67,9 @@ html {
 
     #imgResult {
         background-color: white;
-        height: 20vh;
+        height: 30vh;
         width: 30vh;
-        border: solid 2px #B12524;
+        border: solid 3px #B12524;
         border-radius: 100px;
         text-align: center;
         justify-content: center;

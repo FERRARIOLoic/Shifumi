@@ -20,6 +20,29 @@ html {
         background-size: cover;
     }
 
+    .rules {
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+        height: 25vw;
+        /* border:2px solid #B12524; */
+        /* background-color: #EBC161; */
+        /* opacity:0.3; */
+    }
+
+    .rulesTitle {
+        padding: 20px 20px 20px 20px;
+        margin: 50px 20px 0px 20px;
+        border: 2px solid #B12524;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .rulesTxt {
+        padding: 20px 20px 20px 20px;
+        margin: 0px 20px 50px 20px;
+        border: 2px solid #B12524;
+        border-radius: 0px 0px 10px 10px;
+    }
+
     .bannerTitle {
         height: 15vh;
         text-align: left;
@@ -175,6 +198,9 @@ html {
     #audioControl {
         width: 40%;
     }
+    footer{
+        /* height:20vh; */
+    }
 }
 
 
@@ -200,14 +226,14 @@ html {
     }
 
     .rulesTitle {
-        padding :20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
         margin: 50px 20px 0px 20px;
         border: 2px solid #B12524;
         border-radius: 10px 10px 0px 0px;
     }
 
     .rulesTxt {
-        padding:20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
         margin: 0px 20px 20px 20px;
         border: 2px solid #B12524;
         border-radius: 0px 0px 10px 10px;

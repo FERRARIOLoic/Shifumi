@@ -104,12 +104,14 @@ html {
     }
 
     .imgShifumi {
-        width: 50%;
+        width: 70%;
     }
 
     .imgShifumiResultPlayerWin {
         width: 100%;
         text-align: right;
+        position:relative;
+        top:20px;
         /* background-color: blue; */
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
 
@@ -152,7 +154,7 @@ html {
         align-items: center;
         align-self: flex-end;
         position: relative;
-        top: 45px;
+        top: 25px;
         animation: fight 1s ease 0s 1 normal forwards;
     }
 }

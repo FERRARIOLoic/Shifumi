@@ -41,9 +41,11 @@ html {
     .resultBanner {
         height: 10vh;
     }
+
     #resultBattle {
         animation: animImgShifumiResult 2s ease 2s 1 normal both;
     }
+
     .resultBattle {
         text-align: center;
         animation: animImgShifumiResult 2s ease 2s 1 normal both;
@@ -73,7 +75,7 @@ html {
         width: 40%;
         justify-content: center;
         align-items: end;
-        animation: animImgResult 1s ease 0s 1 normal both;
+        animation: animImgResult 1s ease 1s 1 normal both;
     }
 
     .imgShifumiResultComputer {
@@ -91,6 +93,9 @@ html {
 }
 
 
+
+
+/* BIG SCREEN  */
 @media screen AND (min-width:576px) {
 
     body {
@@ -123,12 +128,50 @@ html {
     }
 
     #resultBattle {
-        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+        animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
+
     .resultBattle {
         text-align: center;
-        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+        animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
+
+    #imgResultPlayer {
+        text-align: right;
+        position: relative;
+        left: 70px;
+    }
+
+    #imgResultComputer {
+        text-align: left;
+        position: relative;
+        right: 70px;
+    }
+
+    #imgResult {
+        /* z-index: 0; */
+        background-color: white;
+        height: 30vh;
+        width: 50vh;
+        border: solid 5px grey;
+        border-radius: 100px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        /* animation: appearArena 1s ease 0s 1 normal both; */
+    }
+
+    @keyframes appearArena {
+        0% {
+            transform: scale(0);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
 
     .bannerImgResult {
         height: 25vh;
@@ -148,25 +191,127 @@ html {
         width: 50%;
     }
 
-    .imgShifumiResultPlayer {
-        width: 30%;
-        justify-content: center;
-        align-items: end;
-        animation: animImgResult 1s ease 0s 1 normal both;
+    .imgShifumiResultPlayerWin {
+        width: 70%;
+        text-align: right;
+        /* background-color: blue; */
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+
     }
 
-    .imgShifumiResultComputer {
-        width: 30%;
-        justify-content: center;
-        align-items: end;
-        animation: animImgResult 1s ease 1s 1 normal both;
+    .imgShifumiResultPlayerLost {
+        width: 70%;
+        text-align: right;
+        /* background-color: blue; */
+        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 5s 1 normal forwards;
+        /* animation: rotateExit 1s ease 3s 1 normal both; */
     }
+
+
+    .imgShifumiResultComputerWin {
+        width: 70%;
+        text-align: left;
+        /* background-color: blue; */
+        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
+    }
+
+
+    .imgShifumiResultComputerLost {
+        width: 70%;
+        text-align: left;
+        /* background-color: blue; */
+        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;
+    }
+
 
     .imgShifumiWinLose {
         width: 50%;
-        animation: animImgShifumiResult 2s ease 2s 1 normal both;
+        animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
+}
+
+
+
+
+
+/* COMMON CLASSES */
+
+.copyright {
+    font-size: 10px;
+    font-style: italic;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+.fight{
+    height:70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    position: relative;
+    top:30px;
+    animation: fight 1s ease 0s 1 normal forwards;
+}@keyframes fight {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+
+
+
+/* ANIMATION */
+@keyframes animPlayer {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animComputer {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rotateExitPlayer {
+	0% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(-250px) rotate(-200deg);
+	}
+}@keyframes rotateExitComputer {
+	0% {
+		opacity: 1;
+		transform: translateX(0) rotate(0deg);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateX(250px) rotate(200deg);
+	}
 }
 
 @keyframes animImgResult {
@@ -190,13 +335,32 @@ html {
         opacity: 1;
     }
 }
+@keyframes jelloWin {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
 
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
 
-.copyright {
-    font-size: 10px;
-    font-style: italic;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
 }

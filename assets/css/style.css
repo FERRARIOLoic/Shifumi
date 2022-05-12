@@ -24,7 +24,7 @@ html {
         height: 15vh;
         text-align: left;
         /* justify-content: center; */
-        /* align-items: center; */
+        align-items: center;
         font-size: 40px;
         color: #B12524;
     }

@@ -125,19 +125,13 @@ selectHuman.forEach(eachTableElement => {
 });
 
 
-var yourAudio = document.getElementById('yourAudio'),
-    ctrl = document.getElementById('audioControl');
+// PLAY MUSICvar aAudio = new Audio('a.mp3');
+var bAudio = new Audio('b.mp3');
 
-ctrl.onclick = function () {
-
-    // Update the Button
-    var pause = ctrl.innerHTML === 'pause!';
-    ctrl.innerHTML = pause ? 'play!' : 'pause!';
-
-    // Update the Audio
-    var method = pause ? 'pause' : 'play';
-    yourAudio[method]();
-
-    // Prevent Default Action
-    return false;
-};
+function myAudioFunction(letter) {
+    if (letter == 'play') {
+        aAudio.play();
+    } else if (letter == 'pause') {
+        bAudio.play();
+    }
+}

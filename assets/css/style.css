@@ -53,12 +53,14 @@ html {
     #imgResultPlayer {
         text-align: right;
         position: relative;
+        top:30px;
         left: 70px;
     }
 
     #imgResultComputer {
         text-align: left;
         position: relative;
+        top:30px;
         right: 70px;
     }
 
@@ -106,7 +108,7 @@ html {
     }
 
     .imgShifumiResultPlayerWin {
-        width: 70%;
+        width: 100%;
         text-align: right;
         /* background-color: blue; */
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
@@ -114,7 +116,7 @@ html {
     }
 
     .imgShifumiResultPlayerLost {
-        width: 70%;
+        width: 100%;
         text-align: right;
         /* background-color: blue; */
         animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 5s 1 normal forwards;
@@ -123,7 +125,7 @@ html {
 
 
     .imgShifumiResultComputerWin {
-        width: 70%;
+        width: 100%;
         text-align: left;
         /* background-color: blue; */
         animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 5s infinite normal forwards;
@@ -131,7 +133,7 @@ html {
 
 
     .imgShifumiResultComputerLost {
-        width: 70%;
+        width: 100%;
         text-align: left;
         /* background-color: blue; */
         animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 5s 1 normal forwards;

@@ -27,8 +27,8 @@ selectHuman.forEach(eachTableElement => {
         console.log('choiceHuman : ' + choiceHuman);
         console.log('ComputerChoice : ' + choiceComputer);
 
-        let resultWin = '<p class="resultBattle"><strong>Bravo, vous avez gagné !!!</strong></p>';
-        let resultLost = '<p class="resultBattle"><strong>Désolé, vous avez perdu...</strong></p>';
+        let resultWin = '<p class="resultBattle"><strong>Gagné !!!</strong></p>';
+        let resultLost = '<p class="resultBattle"><strong>Perdu...</strong></p>';
         let resultEquality = '<p class="resultBattle"><strong>Egalité</strong></p>';
 
 

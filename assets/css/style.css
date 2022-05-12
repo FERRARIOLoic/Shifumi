@@ -302,7 +302,7 @@ html {
         align-items: center;
         align-self: flex-end;
         position: relative;
-        top: 0px;
+        top: 25px;
         animation: fight 1s ease 0s 1 normal forwards;
     }
 

@@ -129,7 +129,9 @@ html {
         width: 90%;
     }
 
-    #choiceHuman {
+    #choiceStone,
+    #choiceLeaf,
+    #choiceScissor {
         animation: waitingPlay 3s ease 1s infinite normal forwards;
     }
 
@@ -198,7 +200,8 @@ html {
     #soundAmbiance {
         width: 20%;
     }
-    footer{
+
+    footer {
         /* height:20vh; */
     }
 }
@@ -319,23 +322,32 @@ html {
         align-items: center;
     }
 
-    .imgShifumi {
+
+    #choiceStone {
         width: 50%;
+        animation: waitingPlay 3s ease 1s infinite normal forwards;
     }
 
-    #choiceHuman {
+    #choiceLeaf {
+        width: 80%;
+        animation: waitingPlay 3s ease 1s infinite normal forwards;
+    }
+
+
+    #choiceScissor {
+        width: 40%;
         animation: waitingPlay 3s ease 1s infinite normal forwards;
     }
 
     .imgShifumiResultPlayerWin {
-        width: 70%;
+        width: 90%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
 
     }
 
     .imgShifumiResultPlayerLost {
-        width: 70%;
+        width: 90%;
         text-align: right;
         /* background-color: blue; */
         animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
@@ -343,21 +355,21 @@ html {
 
 
     .imgShifumiResultComputerWin {
-        width: 70%;
+        width: 90%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
 
     .imgShifumiResultComputerLost {
-        width: 70%;
+        width: 90%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
     }
 
 
     .imgShifumiWinLose {
-        width: 50%;
+        width: 40%;
         animation: animImgShifumiResult 2s ease 3s 1 normal both;
     }
 
@@ -380,9 +392,10 @@ html {
 
 
 
-#btn{
-    color:#B82326;
-    background-color:#EBC363;
+#btn {
+    color: #B82326;
+    background-color: #EBC363;
+    box-shadow: 0 0 0 0.25rem rgb(161 17 13 / 50%);
 }
 
 
@@ -601,3 +614,26 @@ html {
     box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
         3px 3px 5px #B02624;
 }
+
+
+/* #soundChoice {
+    position: absolute;
+    width: 30px;
+    bottom: 10px;
+    left: 10px;
+    background-color: blue;
+}
+
+.soundOn {
+    background-image: url(../img/speakerOn.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.soundOff {
+    background-image: url(../img/speakerOff.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+} */

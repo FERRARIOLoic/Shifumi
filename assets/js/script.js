@@ -1,3 +1,7 @@
+let wantToPlay = alert('Envie de jouer au ShifumHyena ?');
+console.log(wantToPlay);
+
+
 let playerPoints = 0;
 let computerPoints = 0;
 let percentageCalc = 0;

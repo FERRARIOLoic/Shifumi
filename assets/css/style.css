@@ -322,32 +322,22 @@ html {
         align-items: center;
     }
 
-
-    #choiceStone {
-        width: 50%;
-        animation: waitingPlay 3s ease 1s infinite normal forwards;
-    }
-
-    #choiceLeaf {
-        width: 80%;
-        animation: waitingPlay 3s ease 1s infinite normal forwards;
-    }
-
-
+    #choiceStone,
+    #choiceLeaf,
     #choiceScissor {
-        width: 40%;
+        width: 100%;
         animation: waitingPlay 3s ease 1s infinite normal forwards;
     }
 
     .imgShifumiResultPlayerWin {
-        width: 90%;
+        width: 150%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
 
     }
 
     .imgShifumiResultPlayerLost {
-        width: 90%;
+        width: 150%;
         text-align: right;
         /* background-color: blue; */
         animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
@@ -355,14 +345,14 @@ html {
 
 
     .imgShifumiResultComputerWin {
-        width: 90%;
+        width: 150%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
 
     .imgShifumiResultComputerLost {
-        width: 90%;
+        width: 150%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
     }

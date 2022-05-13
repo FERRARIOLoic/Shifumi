@@ -114,10 +114,10 @@ selectHuman.forEach(eachTableElement => {
         computerPointsResult.innerHTML = computerPoints;
         if (computerPoints == 0) {
             computerPoints = 1;
-            percentageCalc = Math.round((playerPoints * 100) / computerPoints);
+            percentageCalc = Math.round(((playerPoints * 100) / computerPoints));
             computerPoints = 0;
         } else {
-            percentageCalc = Math.round((playerPoints * 100) / computerPoints);
+            percentageCalc = Math.round(((playerPoints * 100) / computerPoints));
         }
         percentage.innerHTML = `${percentageCalc}%`;
         console.log(percentageCalc);
@@ -127,8 +127,3 @@ selectHuman.forEach(eachTableElement => {
 
 var myModal = document.getElementById('myModal')
 var myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', function () {
-    myInput.focus()
-})
-

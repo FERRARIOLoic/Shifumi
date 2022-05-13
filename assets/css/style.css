@@ -136,10 +136,11 @@ html {
     }
 
     .imgShifumiResultPlayerWin {
+        position:relative;
+        left:25px;
         width: 150%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
-
     }
 
     .imgShifumiResultPlayerLost {
@@ -147,7 +148,6 @@ html {
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
     }
-
 
     .imgShifumiResultComputerWin {
         width: 150%;
@@ -276,13 +276,13 @@ html {
     #imgResultPlayer {
         text-align: right;
         position: relative;
-        left: 70px;
+        left: 25px;
     }
 
     #imgResultComputer {
         text-align: left;
         position: relative;
-        right: 70px;
+        right: 95px;
     }
 
     #imgResult {

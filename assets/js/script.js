@@ -125,16 +125,9 @@ selectHuman.forEach(eachTableElement => {
 });
 
 
-function changeImage(element)
-{ 
-	var v = element.getAttribute("src");
-	v = localFilename(v);   // for a local filename
+var myModal = document.getElementById('myModal')
+var myInput = document.getElementById('myInput')
 
-	if(v == "feed-blue.png")
-		v = "feed-orange.png";
-	else
-		v = "feed-blue.png";
-
-	element.setAttribute("src", v);	
-
-}
+myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+})

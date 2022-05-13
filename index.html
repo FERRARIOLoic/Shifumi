@@ -9,10 +9,11 @@
     <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
     <link rel='stylesheet' href='assets/css/style.css'>
     <title>Shifumi</title>
+
 </head>
 
 <body>
-    <audio src="assets/img/shifumiAudio.mp3" autoplay="1"></audio>
+    <!-- <audio src="assets/sounds/shifumiAudio.mp3" autoplay="1"></audio> -->
     <main class="container-fluid text-center align-self-center">
         <div class="row">
             <div class="col-12 col-md-7">
@@ -52,40 +53,28 @@
                     </div>
                 </div>
             </div>
-            <div class="col-11 col-md-5 rules ">
-                <div class="row">
-                    <div class="col-11 rulesTitle">
-                        <h1>Règles du jeu</h1>
-                    </div>
-                </div>
-                <div class="row align-self-center">
-                    <div class="col-11 rulesTxt text-start align-self-center">
-                        <p>La partie se joue à deux joueurs</p>
-                        <p>Chaque joueur choisi entre <i>Papier</i>, <i>feuille</i> ou <i>Ciseaux</i></p>
-                        <p>La pierre perd face à la feuille mais gagne face aux ciseaux</p>
-                        <p>La feuille perd face aux ciseaux mais gagne face à la pierre</p>
-                        <p>Les ciseaux perdent face à la pierre mais gagne face à la feuille</p>
-                        <p>Celui qui gagne marque un point </p>
-                    </div>
-                </div>
-            </div>
-
-
-
         </div>
     </main>
+    
+
+    
+
     <footer class="container-fluid fixed-bottom">
         <div class="row">
             <!-- COL FOR IMG -->
             <div class="col-12">
                 <div class="row">
-                    <div class="col-5 copyright">
+                    <div class="col-3 copyright">
                         &#169;FERRARIOLoïc-05/22
                     </div>
-                    <div class="col-2">
-                        <img id="audioControl" src="assets/img/speakerOn.png">
+                    <div class="col-3">
+                        <img id="soundAmbiance" src="assets/img/speakerOff.png" alt="Sound Button">
+                        <audio id="audio">
+                            <source src="assets/sounds/shifumiAudio.mp3" type="audio/mpeg">
+                        </audio>
+                        <!-- <img id="audioControl" src="assets/img/speakerOn.png"> -->
                     </div>
-                    <div class="col-5 switch-holder">
+                    <div class="col-3 switch-holder">
                         <div class="switch-label">
                             <i class="fa fa-jokeMode-b"></i><span><strong>Joke Mode</strong></span>
                         </div>
@@ -94,10 +83,39 @@
                             <label for="jokeMode"></label>
                         </div>
                     </div>
+                    <div class="col-3 text-end">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Règles du jeu
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Règles du jeu</h5>
+                </div>
+                <div class="modal-body">
+                    <p>La partie se joue à deux joueurs</p>
+                    <p>Chaque joueur choisi entre <i>Papier</i>, <i>Feuille</i> ou <i>Ciseaux</i></p>
+                    <p>Les points se comptent ainsi :
+                        <br>Pierre : perd face à Feuille, gagne face à Ciseaux
+                        <br>Feuille : perd face à Ciseaux, gagne face à Pierre
+                        <br>Ciseaux : perd face à Feuille, gagne face à Ciseaux
+                    </p>
+                    <p>Celui qui gagne marque un point </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Jouer</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SCRIPT BOOTSTRAP -->
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'

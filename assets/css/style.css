@@ -195,7 +195,7 @@ html {
         animation: fight 1s ease 0s 1 normal forwards, animBlink 10s ease 1s infinite normal forwards;
     }
 
-    #audioControl {
+    #soundAmbiance {
         width: 40%;
     }
     footer{
@@ -372,7 +372,7 @@ html {
         animation: fight 1s ease 0s 1 normal forwards, animBlink 10s ease 1s infinite normal forwards;
     }
 
-    #audioControl {
+    #soundAmbiance {
         width: 15%;
     }
 }
@@ -390,11 +390,6 @@ html {
     display: flex;
     justify-content: start;
     align-items: center;
-}
-
-p {
-    font-weight: bold;
-
 }
 
 /* ANIMATIONS */

@@ -196,7 +196,7 @@ html {
     }
 
     #soundAmbiance {
-        width: 40%;
+        width: 20%;
     }
     footer{
         /* height:20vh; */
@@ -373,12 +373,17 @@ html {
     }
 
     #soundAmbiance {
-        width: 15%;
+        width: 10%;
     }
+
 }
 
 
 
+#btn{
+    color:#B82326;
+    background-color:#EBC363;
+}
 
 
 /* COMMON CLASSES */

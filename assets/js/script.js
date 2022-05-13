@@ -1,5 +1,5 @@
-let wantToPlay = alert('Envie de jouer au ShifumHyena ?');
-console.log(wantToPlay);
+// let wantToPlay = alert('Envie de jouer au ShifumHyena ?');
+// console.log(wantToPlay);
 
 
 let playerPoints = 0;

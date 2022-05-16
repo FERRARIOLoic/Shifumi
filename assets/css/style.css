@@ -13,7 +13,7 @@ html {
 @media screen AND (max-width:576px) {
 
     body {
-        background-image: url(../img/backgroundShifumi.jpg);
+        background-image: url(../img/backgroundShifumi_00.jpg);
         background-position: 45% 50%;
         border-radius: 10px;
         background-repeat: no-repeat;

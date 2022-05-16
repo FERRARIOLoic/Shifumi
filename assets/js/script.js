@@ -42,7 +42,7 @@ selectHuman.forEach(eachTableElement => {
             resultBattle.innerHTML = resultEquality;
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Feuille') {
@@ -50,7 +50,7 @@ selectHuman.forEach(eachTableElement => {
             document.getElementById("resultBattle").style.color = "#f00020";
             resultBattle.innerHTML = resultLost;
             computerPoints = computerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerLost" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Ciseaux') {
@@ -58,7 +58,7 @@ selectHuman.forEach(eachTableElement => {
             document.getElementById("resultBattle").style.color = "#228B22";
             resultBattle.innerHTML = resultWin;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerLost" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Pierre') {
@@ -66,7 +66,7 @@ selectHuman.forEach(eachTableElement => {
             document.getElementById("resultBattle").style.color = "#228B22";
             resultBattle.innerHTML = resultWin;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerLost" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Feuille') {
@@ -75,7 +75,7 @@ selectHuman.forEach(eachTableElement => {
             resultBattle.innerHTML = resultEquality;
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Ciseaux') {
@@ -83,7 +83,7 @@ selectHuman.forEach(eachTableElement => {
             document.getElementById("resultBattle").style.color = "#f00020";
             resultBattle.innerHTML = resultLost;
             computerPoints = computerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerLost" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Pierre') {
@@ -91,7 +91,7 @@ selectHuman.forEach(eachTableElement => {
             document.getElementById("resultBattle").style.color = "#f00020";
             resultBattle.innerHTML = resultLost;
             computerPoints = computerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerLost" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Feuille') {
@@ -99,7 +99,7 @@ selectHuman.forEach(eachTableElement => {
             document.getElementById("resultBattle").style.color = "#228B22";
             resultBattle.innerHTML = resultWin;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerLost" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Ciseaux') {
@@ -108,7 +108,7 @@ selectHuman.forEach(eachTableElement => {
             resultBattle.innerHTML = resultEquality;
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         }

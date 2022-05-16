@@ -323,7 +323,7 @@ html {
     #choiceStone,
     #choiceLeaf,
     #choiceScissor {
-        width: 100%;
+        width: 50%;
         animation: waitingPlay 3s ease 1s infinite normal forwards;
     }
 

@@ -47,7 +47,7 @@ selectHuman.forEach(eachTableElement => {
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Feuille') {
             // PERDU
-            document.getElementById("resultBattle").style.color = "#f00020";
+            document.getElementById("resultBattle").style.color = "#272727";
             resultBattle.innerHTML = resultLost;
             computerPoints = computerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.png">`;
@@ -55,7 +55,7 @@ selectHuman.forEach(eachTableElement => {
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Ciseaux') {
             // GAGNE
-            document.getElementById("resultBattle").style.color = "#228B22";
+            document.getElementById("resultBattle").style.color = "##272727";
             resultBattle.innerHTML = resultWin;
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.png">`;
@@ -63,7 +63,7 @@ selectHuman.forEach(eachTableElement => {
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerLost" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Pierre') {
             // GAGNE
-            document.getElementById("resultBattle").style.color = "#228B22";
+            document.getElementById("resultBattle").style.color = "##272727";
             resultBattle.innerHTML = resultWin;
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.png">`;
@@ -80,7 +80,7 @@ selectHuman.forEach(eachTableElement => {
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Ciseaux') {
             // PERDU
-            document.getElementById("resultBattle").style.color = "#f00020";
+            document.getElementById("resultBattle").style.color = "#272727";
             resultBattle.innerHTML = resultLost;
             computerPoints = computerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.png">`;
@@ -88,7 +88,7 @@ selectHuman.forEach(eachTableElement => {
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Pierre') {
             // PERDU
-            document.getElementById("resultBattle").style.color = "#f00020";
+            document.getElementById("resultBattle").style.color = "#272727";
             resultBattle.innerHTML = resultLost;
             computerPoints = computerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/lost.png">`;
@@ -96,7 +96,7 @@ selectHuman.forEach(eachTableElement => {
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Ciseaux' && choiceComputer == 'Feuille') {
             // GAGNE
-            document.getElementById("resultBattle").style.color = "#228B22";
+            document.getElementById("resultBattle").style.color = "##272727";
             resultBattle.innerHTML = resultWin;
             playerPoints = playerPoints + 1;
             imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/win.png">`;

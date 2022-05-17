@@ -276,13 +276,13 @@ html {
     #imgResultPlayer {
         text-align: right;
         position: relative;
-        left: 25px;
+        left: 55px;
     }
 
     #imgResultComputer {
         text-align: left;
         position: relative;
-        right: 95px;
+        right: 55px;
     }
 
     #imgResult {
@@ -330,14 +330,14 @@ html {
     }
 
     .imgShifumiResultPlayerWin {
-        width: 150%;
+        width: 80%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
 
     }
 
     .imgShifumiResultPlayerLost {
-        width: 150%;
+        width: 80%;
         text-align: right;
         /* background-color: blue; */
         animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
@@ -345,14 +345,14 @@ html {
 
 
     .imgShifumiResultComputerWin {
-        width: 150%;
+        width: 80%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
 
     .imgShifumiResultComputerLost {
-        width: 150%;
+        width: 80%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
     }
@@ -383,9 +383,9 @@ html {
 
 
 #btn {
-    color: #B82326;
-    background-color: #EBC363;
-    box-shadow: 0 0 0 0.25rem rgb(161 17 13 / 50%);
+    color: #AEAEAE;
+    /* background-color: #7C7C7C; */
+    /* box-shadow: 0 0 0 0.25rem rgb(161 17 13 / 50%); */
 }
 
 
@@ -394,7 +394,7 @@ html {
 .copyright {
     font-size: 10px;
     font-style: italic;
-    color: #B02624;
+    color: #AEAEAE;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -600,9 +600,9 @@ html {
     left: 50%;
     content: 'On';
     color: #fff;
-    background-color: #B02624;
+    background-color: #787878;
     box-shadow: -3px -3px 5px rgba(255, 255, 255, .5),
-        3px 3px 5px #B02624;
+        3px 3px 5px #787878;
 }
 
 

@@ -79,14 +79,14 @@ html {
         text-align: right;
         position: relative;
         top: 25px;
-        left: 0px;
+        left: 20px;
     }
 
     #imgResultComputer {
         text-align: left;
         position: relative;
         top: 25px;
-        right: 80px;
+        right: 50px;
     }
 
     #imgResult {
@@ -137,25 +137,25 @@ html {
     }
 
     .imgShifumiResultPlayerWin {
-        width: 300%;
+        width: 150%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
     .imgShifumiResultPlayerLost {
-        width: 300%;
+        width: 150%;
         text-align: right;
         animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
     }
 
     .imgShifumiResultComputerWin {
-        width: 300%;
+        width: 150%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
     }
 
     .imgShifumiResultComputerLost {
-        width: 300%;
+        width: 150%;
         text-align: left;
         animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
     }

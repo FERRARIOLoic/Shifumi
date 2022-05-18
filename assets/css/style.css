@@ -67,12 +67,12 @@ html {
 
     #resultBattle {
         height: 5vh;
-        animation: animImgShifumiResult 2s ease 3s 1 normal both;
+        animation: animImgShifumiResult 1s ease 3s 1 normal both;
     }
 
     .resultBattle {
         text-align: center;
-        animation: animImgShifumiResult 2s ease 3s 1 normal both;
+        animation: animImgShifumiResult 1s ease 3s 1 normal both;
     }
 
     #imgResultPlayer {
@@ -133,31 +133,31 @@ html {
     #choiceStone,
     #choiceLeaf,
     #choiceScissor {
-        animation: waitingPlay 3s ease 1s infinite normal forwards;
+        animation: waitingPlay 4s ease 1s infinite normal forwards;
     }
 
     .imgShifumiResultPlayerWin {
         width: 150%;
         text-align: right;
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
+        animation: animPlayer 1s ease-in-out 0s 1 normal both, jelloWin 1s ease 3s infinite normal forwards;
     }
 
     .imgShifumiResultPlayerLost {
         width: 150%;
         text-align: right;
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
+        animation: animPlayer 1s ease-in-out 0s 1 normal both, rotateExitPlayer 1s ease 3s 1 normal forwards;
     }
 
     .imgShifumiResultComputerWin {
         width: 150%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
+        animation: animComputer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 3s infinite normal forwards;
     }
 
     .imgShifumiResultComputerLost {
         width: 150%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
+        animation: animComputer 1s ease-in-out 1s 1 normal both, rotateExitComputer 1s ease 3s 1 normal forwards;
     }
 
     #playerPointsResult,
@@ -182,7 +182,7 @@ html {
 
     .imgShifumiWinLose {
         width: 40%;
-        animation: animImgShifumiResult 2s ease 3s 1 normal both;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
     }
 
     .fight {
@@ -265,12 +265,12 @@ html {
 
     #resultBattle {
         height: 5vh;
-        animation: animImgShifumiResult 2s ease 3s 1 normal both;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
     }
 
     .resultBattle {
         text-align: center;
-        animation: animImgShifumiResult 2s ease 3s 1 normal both;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
     }
 
     #imgResultPlayer {
@@ -286,7 +286,7 @@ html {
     }
 
     #imgResult {
-        background-color: white;
+        background-color: rgb(255,255,255,0.2);
         height: 30vh;
         width: 50vh;
         border: solid 2px #C0C0C0;
@@ -332,7 +332,7 @@ html {
     .imgShifumiResultPlayerWin {
         width: 80%;
         text-align: right;
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
+        animation: animPlayer 1s ease-in-out 0s 1 normal both, jelloWin 1s ease 3s infinite normal forwards;
 
     }
 
@@ -340,27 +340,27 @@ html {
         width: 80%;
         text-align: right;
         /* background-color: blue; */
-        animation: animPlayer 1s ease-in-out 1s 1 normal both, rotateExitPlayer 1s ease 4s 1 normal forwards;
+        animation: animPlayer 1s ease-in-out 0s 1 normal both, rotateExitPlayer 1s ease 3s 1 normal forwards;
     }
 
 
     .imgShifumiResultComputerWin {
         width: 80%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, jelloWin 1s ease 4s infinite normal forwards;
+        animation: animComputer 1s ease-in-out 1s 1 normal both, jelloWin 1s ease 3s infinite normal forwards;
     }
 
 
     .imgShifumiResultComputerLost {
         width: 80%;
         text-align: left;
-        animation: animComputer 1s ease-in-out 2s 1 normal both, rotateExitComputer 1s ease 4s 1 normal forwards;
+        animation: animComputer 1s ease-in-out 1s 1 normal both, rotateExitComputer 1s ease 3s 1 normal forwards;
     }
 
 
     .imgShifumiWinLose {
         width: 40%;
-        animation: animImgShifumiResult 2s ease 3s 1 normal both;
+        animation: animImgShifumiResult 2s ease 2s 1 normal both;
     }
 
     .fight {
@@ -407,7 +407,7 @@ html {
     }
 
     50% {
-        transform: scale(1.1);
+        transform: scale(0.5);
     }
 
     100% {

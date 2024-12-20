@@ -42,7 +42,7 @@ selectHuman.forEach(eachTableElement => {
             resultBattle.innerHTML = resultEquality;
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Pierre' && choiceComputer == 'Feuille') {
@@ -75,7 +75,7 @@ selectHuman.forEach(eachTableElement => {
             resultBattle.innerHTML = resultEquality;
             computerPoints = computerPoints + 1;
             playerPoints = playerPoints + 1;
-            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.gif">`;
+            imgResult.innerHTML = `<img class="imgShifumiWinLose" src="assets/img/equality.png">`;
             imgResultPlayer.innerHTML = `<img class="imgShifumiResultPlayerWin" src="assets/img/${choiceHuman}.png">`;
             imgResultComputer.innerHTML = `<img class="imgShifumiResultComputerWin" src="assets/img/${choiceComputer}.png">`;
         } else if (choiceHuman == 'Feuille' && choiceComputer == 'Ciseaux') {

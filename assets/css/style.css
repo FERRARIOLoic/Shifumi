@@ -61,7 +61,7 @@ html {
         justify-content: center;
         align-items: center;
         font-size: 30px;
-        color:#C0C0C0;
+        color: #C0C0C0;
     }
 
     .resultBanner {
@@ -93,7 +93,7 @@ html {
     }
 
     #imgResult {
-        background-color: rgb(255,255,255,0.2);
+        background-color: rgb(255, 255, 255, 0.2);
         height: 20vh;
         width: 30vh;
         border: solid 2px #C0C0C0;
@@ -259,7 +259,7 @@ html {
         justify-content: center;
         align-items: center;
         font-size: 30px;
-        color:#C0C0C0;
+        color: #C0C0C0;
     }
 
     .resultBanner {
@@ -289,7 +289,7 @@ html {
     }
 
     #imgResult {
-        background-color: rgb(255,255,255,0.2);
+        background-color: rgb(255, 255, 255, 0.2);
         height: 30vh;
         width: 50vh;
         border: solid 2px #C0C0C0;
@@ -559,7 +559,7 @@ html {
 }
 
 .switch-label {
-    width: 100px;
+    /* width: 100px; */
     /* font-size:small; */
 }
 
@@ -630,3 +630,9 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
 } */
+
+.box_rules {
+    background-color: rgba(174, 174, 174, 0.5);
+    border-radius: 10px;
+    box-shadow: #AEAEAE 0px 0px 6px;
+}

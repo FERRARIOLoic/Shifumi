@@ -41,15 +41,15 @@
                 <div class="row bannerImgChoice">
                     <div class="col-3 col-md-3">
                         <img id="choiceStone" data-value="Pierre" class="imgShifumi" alt="Pierre"
-                            src="assets/img/Pierre.png" title="Pierre"><br><strong><h2>Shi</h2></strong>
+                            src="assets/img/pierre.png" title="Pierre"><br><span class="fs-3 fw-bold">Shi</span>
                     </div>
                     <div class="col-3 col-md-3">
                         <img id="choiceLeaf" data-value="Feuille" class="imgShifumi" alt="Feuille"
-                            src="assets/img/Feuille.png"><br><strong><h2>Fu</h2></strong>
+                            src="assets/img/feuille.png"><br><span class="fs-3 fw-bold">Fu</span>
                     </div>
                     <div class="col-3 col-md-3">
                         <img id="choiceScissor" data-value="Ciseaux" class="imgShifumi" alt="Ciseaux"
-                            src="assets/img/Ciseaux.png"><br><strong><h2>Mi</h2></strong>
+                            src="assets/img/ciseaux.png"><br><span class="fs-3 fw-bold">Mi</span>
                     </div>
                 </div>
             </div>
@@ -64,18 +64,18 @@
             <!-- COL FOR IMG -->
             <div class="col-12">
                 <div class="row">
-                    <div class="col-6 col-md-3 copyright">
-                        <h5>&#169;FERRARIOLoïc-05/22</h5>
+                    <div class="col-6 col-md-2 copyright text-white fw-bold">
+                        <h5>&#169;FERRARIOLoïc-05/22 <?php echo date('d/m/Y'); ?></h5>
                     </div>
                     <div class="col-6 col-md-3 text-end">
-                        <img id="soundAmbiance" src="assets/img/speakerOff.png" alt="Sound Button">
+                        <img id="soundAmbiance" src="assets/img/speakerOff.png" alt="Sound Button" title="Musique">
                         <audio id="audio">
                             <source src="assets/sounds/shifumiAudio.mp3" type="audio/mpeg">
                         </audio>
                     </div>
-                    <div class="col-6 col-md-3 switch-holder">
+                    <div class="col-6 col-md-4 switch-holder text-white">
                         <div class="switch-label">
-                            <i class="fa fa-jokeMode-b"></i><span><strong><h3>Joke Mode</h3></strong></span>
+                            <i class="fa fa-jokeMode-b"></i><span><strong><h3>Hyena Mode</h3></strong></span>
                         </div>
                         <div class="switch-toggle">
                             <input type="checkbox" id="jokeMode">
@@ -88,7 +88,7 @@
                     <div class="col-6 col-md-3 text-end">
                         <button id="btn" type="button" class="btn" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">
-                            <strong><h3>Règles du jeu</h3></strong>
+                            <span class="fs-4 fw-bold box_rules p-1">Règles du jeu</span>
                         </button>
                     </div>
                 </div>
@@ -104,8 +104,8 @@
                     <h5 class="modal-title" id="staticBackdropLabel">Règles du jeu</h5>
                 </div>
                 <div class="modal-body">
-                    <p>La partie se joue à deux joueurs</p>
-                    <p>Chaque joueur choisi entre <i>Papier</i>, <i>Feuille</i> ou <i>Ciseaux</i></p>
+                    <p>La partie se joue contre l'ordinateur</p>
+                    <p>Choisissez entre <i>Papier</i>, <i>Feuille</i> ou <i>Ciseaux</i></p>
                     <p>Les points se comptent ainsi :
                         <br>Pierre : perd face à Feuille, gagne face à Ciseaux
                         <br>Feuille : perd face à Ciseaux, gagne face à Pierre
